@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table css</title>
+    <style>
+        #table{
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            width:100%;
+            border: 3px solid black;
+            border-spacing: 10px;
+        }
+
+        #table th{
+            color:rgba(124, 3, 149, 0.725);
+            background-color: rgb(217, 243, 99);
+            font-size: 25px;
+            border-bottom: 2px solid black;
+            font-weight: bold;
+
+        }
+
+         #table td{
+            color:rgb(3, 8, 104);
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+            vertical-align: bottom;
+        }
+
+        #table tr:nth-child(even){
+            background-color: rgb(203, 243, 243);
+
+        }
+
+        #table tr:hover{
+            background-color: rgb(223, 198, 182);
+
+        }
+        img{
+            width: 5%;
+            height: 5%;
+            
+        }
+
+        .verticalAlignment{
+            vertical-align: bottom;
+        }
+
+        caption{
+            caption-side: bottom;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="overflow-x: auto">
+        <!--overflow:scroll-->
+    <table id="table">
+        <caption>Country table</caption>
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Flag</th>
+            
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+            <td class="verticalAlignment"><img src="/photos in css/india flag.png" alt="India Flag"></td>
+
+        </tr>
+        <tr>
+            <td>Bangladesh</td>
+            <td>Dhaka</td>
+            <td class="verticalAlignment"><img src="/photos in css/bangladesh flag.png" alt="Bangladesh flag"></td>
+
+        </tr>
+        <tr>
+            <td>Switzerland</td>
+            <td>Bern</td>
+            <td class="verticalAlignment"><img src="/photos in css/switzerland flag.png" alt="Switzerland flag"></td>
+            
+        </tr>
+    </div>
+
+    </table>
+</body>
+</html>

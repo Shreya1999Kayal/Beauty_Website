@@ -1,0 +1,22 @@
+a:visited{
+    color : blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color : rgb(255, 72, 0);
+    background-color: transparent;
+    text-decoration-style: double;
+}
+
+a:active{
+    color : rgb(0, 255, 76);
+    background-color: transparent;
+    text-decoration-style: double;
+}
+
+
+
+/* div{
+    border: 5px solid red;
+} */

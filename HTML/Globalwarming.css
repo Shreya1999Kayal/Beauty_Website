@@ -1,0 +1,102 @@
+h2 {
+    color: rgb(226, 166, 123);
+    font-family: Courier;
+    text-align: left;
+    font-size: 3.2;
+}
+
+a:link {
+    color: #B1F1AB;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(224, 239, 5, 1);
+    background-color: transparent;
+    text-decoration-style: double;
+}
+
+a:active {
+    color: hsla(352, 72.1%, 74.7%, 0.7);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+body {
+    background-image: url("https://cff2.earth.com/uploads/2025/01/18102250/Global-warming-rise.jpg");
+    background-size: 82%;
+}
+
+#addr {
+    border: 3px solid skyblue;
+    padding: 25px;
+    margin: 65px;
+}
+
+.brdr {
+    border: 3px solid rgb(243, 243, 243);
+    width: 20%;
+    padding: 25px;
+    margin: 65px;
+}
+
+table {
+    border-collapse: collapse;
+    
+    
+    background-color: black;
+    border-radius: 10px;
+    
+    margin: 20px;
+    margin-top: 50px;
+    
+}
+
+th {
+    border-bottom: 2px solid bisque;
+    border-color: rgb(2, 243, 243);
+    color: rgb(147, 245, 147);
+    font-size: 27px;
+    border-style: dashed;
+    text-align: left;
+    padding: 25px;
+    background-color: black;
+
+   
+
+}
+
+td {
+    border: 2px solid bisque;
+    border-color: rgb(2, 243, 243);
+    
+    color: antiquewhite;
+    width:20%; 
+    height:30px;
+    padding: 10px;
+    
+}
+
+tr:nth-child(even){
+    background-color: rgb(86, 2, 44);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(26, 5, 118);
+}
+
+tr:hover{
+    background-color:rgb(107, 7, 202);
+}
+
+tr{
+    visibility:visible;
+    /* hidden to hide table contents, collapse to collapse entire table  */
+}

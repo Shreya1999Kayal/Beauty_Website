@@ -1,0 +1,15 @@
+        .name {
+            color: blue;
+        }
+
+        #name1 {
+            color: red;
+        }
+
+        div {
+            color: brown;
+        }
+
+        * {
+            color: red;
+        } 

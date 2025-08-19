@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  display: inline;
+}
+
+#displaynone{
+    display:none;
+}
+
+img{
+    display: block;
+    width:30%;
+}
+
+#visibilityhidden{
+    visibility: hidden;
+}
+
+p.inlineblock{
+    display:inline-block;
+}
+
+p.flex{
+    display: flex;
+    justify-content: space-around;
+}
+</style>
+</head>
+<body>
+
+<h1>Display Property</h1>
+
+<div style="background-color:yellow;">div inline yellow </div>
+<div style="background-color:green;">div inline green </div>
+<div style="background-color:blue;">div inline blue</div>
+<p>Nothing will be displayed</p>
+<p id="displaynone">Nothing will be displayed and no space</p>
+<p id="visibilityhidden">Visibility hidden affect the layout and put space</p>
+
+<img src="/photos in css/sunrise.webp" alt="sunrise">
+<img src="/photos in css/nature.cms" alt="sunset">
+
+<p class="inlineblock" style="background-color:yellow;">inline block text 1</p>
+<p class="inlineblock" style="background-color:green;">inline block text 2</p>
+<p class="inlineblock" style="background-color:yellow;">inline block text 3</p>
+<p class="inlineblock" style="background-color:green;">inline block text 4</p>
+<p class="inlineblock" style="background-color:yellow;">inline block text 5</p>
+
+<p class="flex">
+<p  style="background-color:yellow;">flex text 1</p>
+<p  style="background-color:green;">flex text 2</p>
+<p  style="background-color:yellow;">flex text 3</p>
+<p style="background-color:green;">flex text 4</p>
+<p  style="background-color:yellow;">flex text 5</p>
+</p>
+
+</body>
+</html>
+
+

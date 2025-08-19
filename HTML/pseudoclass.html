@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width:100%;
+        }
+
+        th,td{
+            border: 2px solid black;
+        }
+
+        td:nth-child(even){
+            color: rgb(220, 9, 30);
+            background-color: black;
+        }
+        div:inline > div{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Section</th>
+        <th>Roll</th>
+        <th>Ph No</th>
+        </tr>
+        <tr>
+        <td>Ajay</td>
+        <td>5</td>
+        <td>A</td>
+        <td>14</td>
+        <td>1236547890</td>
+        </tr>
+        <tr>
+        <td>Tiya</td>
+        <td>7</td>
+        <td>B</td>
+        <td>24</td>
+        <td>1478529630</td>
+        </tr>
+        <tr>
+        <td>Driya</td>
+        <td>1</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1236547890</td>
+        </tr>
+        <tr>
+        <td>Piya</td>
+        <td>8</td>
+        <td>B</td>
+        <td>2</td>
+        <td>1478529630</td>
+        </tr>
+        
+    </table>
+    <div>
+        <div style="background-color:rgb(64, 218, 40);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga cum quo, corporis ab quod blanditiis corrupti? Accusamus provident quidem placeat.</div>
+        <div style="background-color:rgb(233, 68, 173);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga cum quo, corporis ab quod blanditiis corrupti? Accusamus provident quidem placeat.</div>
+        <div style="background-color:rgb(206, 232, 13);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga cum quo, corporis ab quod blanditiis corrupti? Accusamus provident quidem placeat.</div>
+    </div>
+</body>
+</html>

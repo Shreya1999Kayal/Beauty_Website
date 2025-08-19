@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .food-container{
+            display: flex;
+            /* justify-content:center;  */
+            align-items:stretch;
+            background-color: aqua;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 700px;
+            /* flex-flow: row wrap; */
+        }
+
+        .food-container > div{
+            background-color: rgb(92, 163, 4);
+            width: 260px;
+            margin:22px;
+            padding: 20px;
+            color:rgb(238, 208, 208);
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="food-container">
+        <div style="order: 4; flex-grow: 2;">pasta</div>
+        <div style="order: 1; ">maggie</div>
+        <div style="order: 6; ">momo</div>
+        <div style="order: 2; align-self:flex-end; ">chowmin</div>
+        <div style="order: 5; flex-basis: 550px;">biryani</div>
+        <div style="order: 3;flex-shrink: 0;">polao</div>
+
+        
+
+     
+        
+    </div>
+</body>
+</html>

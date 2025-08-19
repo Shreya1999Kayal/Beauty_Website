@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Website</title>
+
+  <!-- Owl carousel cdn links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+
+  <link rel="stylesheet" href="/beautyindex.css">
+  <script src="https://kit.fontawesome.com/950db43c22.js"></script>
+</head>
+
+<body>
+  <!-- header section -->
+  <header style="position:fixed;width:100%;top:0px;z-index:50;">
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1" href="#" id="beauty">Beauty</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active baritems" aria-current="page" href="#"
+                style="background-color: rgb(234, 59, 109);border-radius:50px 15px;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link baritems" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle baritems" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Products</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Salon Service</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Home Service</a></li>
+              </ul>
+            </li>
+            <li class="nav-item baritems">
+              <a class="nav-link baritems" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link baritems" href="#">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link baritems" href="#">Price</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link baritems" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--carausel section-->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/slide1img2.jpg" class="d-block w-100" height="700vw" alt="slide1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="slidecaption">Beauty Products</h5>
+          <p class="slidecaptionsub">Best Place to Buy</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/images/side2img2.jpg" class="d-block w-100" height="700vw" alt="slide2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="slidecaption">Salon</h5>
+          <p class="slidecaptionsub">Best Salon in City</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/slide3img2.jpg" class="d-block w-100" height="700vw" alt="slide3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="slidecaption">Salon At Home</h5>
+          <p class="slidecaptionsub">All salon services at home</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--About Beauty-->
+  <section class="d-flex align-items-center min-vh-75 py-5" style="background-color: #030013;">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center mb-5 mt-5">
+        <div class="text-center">
+          <h2 class="aboutbeauty">About Beauty</h2>
+          <p class="dot"></p>
+          <br />
+          <p class="aboutbeautypara">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, eius quibusdam ab nobis accusantium
+            error suscipit, commodi qui alias facere vel consectetur culpa quis.Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Laudantium, eius quibusdam ab nobis accusantium
+            error suscipit, commodi qui alias facere vel.
+          </p>
+
+          <img src="/images/pic.jpg" height="500vw" width="600vw" alt="beauty pic" class="bpic">
+          <h2 id="boldsub">Lorem ipsum dolor sit amet, consectetur Lorem </h2>
+          <h4 id="italicsub">Dolores quae porro consequatur aliquam </h4>
+          <p id="para">Consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt fugiat. Dolores
+            quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+          <span class="icon">
+            <ul>
+              <li>
+                <i class="fa-regular fa-circle-check fa-1x"></i>
+                <span class="spancss">quae porro consequatur aliquam, incidunt fugiat.</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check fa-1x"></i>
+                <span class="spancss">quae porro consequatur aliquam, incidunt fugiat.</span>
+
+              </li>
+
+              <li>
+                <i class="fa-regular fa-circle-check fa-1x"></i>
+                <span class="spancss">quae porro consequatur aliquam, incidunt fugiat.</span>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Our Services-->
+  <section class="d-flex align-items-center min-vh-100 py-5" style="background-color: rgb(230, 101, 144);">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center mb-5 mt-5">
+        <div class="text-center">
+          <h2 class="services">Our Services</h2>
+          <p class="dot" style="border-bottom: 16px dotted #4e0449;"></p>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-5 mt-5">
+        <div class="text-center">
+          <p class="servicespara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
+            consequatur aliquam, incidunt fugiat culpa esse aute nulla. malis nulla duis fugiat culpa esse aute nulla
+            ipsum velit export irure minim illum fore</p>
+
+        </div>
+      </div>
+
+      <!--Card for images-->
+
+      <div class="row justify-content-center" style="margin-left: 12vw;margin-right: 12vw;">
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem; border-radius: 8px 8px 8px 60px;">
+            <img src="/images/hair.jpg" class="card-img-top" height="100%" width="100%" alt="hair">
+            <div class="card-body">
+              <h4 class="card-title cardlabel">Hair</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem;border-radius: 8px 8px 8px 60px;">
+            <img src="/images/facial.jpg" class="card-img-top" height="100%" width="100%" alt="facial">
+            <div class="card-body">
+              <h4 class="card-title cardlabel">Skin</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem;border-radius: 8px 8px 8px 60px;">
+            <img src="/images/hand & feet.jpg" class="card-img-top" height="100%" width="100%" alt="hands & feet">
+            <div class="card-body">
+              <h4 class="card-title cardlabel">Hands & Feet</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem;border-radius: 8px 8px 8px 60px;">
+            <img src="/images/essentials.jpg" class="card-img-top" height="100%" width="100%" alt="essentials">
+            <div class="card-body">
+              <h4 class="card-title cardlabel">Essentials</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem; border-radius: 8px 8px 8px 60px;">
+            <img src="/images/innovations.jpg" class="card-img-top" width="100%" height="100%" alt="innovations">
+            <div class="card-body">
+              <h4 class="card-title cardlabel">Innovations</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem;border-radius: 8px 8px 8px 60px;">
+            <img src="/images/Bridal-Makeup.jpg" class="card-img-top" width="100%" height="172vw" alt="bridal">
+            <div class="card-body">
+              <h4 class="card-title cardlabel">Bridal</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem;border-radius: 8px 8px 8px 60px;">
+            <div class="icon justify-content-center cardicons ">
+              <i class="fa-solid fa-map fa-3x"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title cardtitleicons">Essentials</h4>
+              <p class="card-text cardtexticons">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
+                porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem;border-radius: 8px 8px 8px 60px;">
+            <div class="icon justify-content-center cardicons">
+              <i class="fa-solid fa-bag-shopping fa-4x"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title cardtitleicons">Essentials</h4>
+              <p class="card-text cardtexticons">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
+                porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin-right: 2vw; margin-bottom: 2vw;">
+          <div class="card" style="width: 18rem;border-radius: 8px 8px 8px 60px;">
+            <div class="icon justify-content-center cardicons">
+              <i class="fa-solid fa-map fa-4x"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title cardtitleicons">Essentials</h4>
+              <p class="card-text cardtexticons">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
+                porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Price-->
+
+  <section class="d-flex align-items-center min-vh-75 py-5" style="background-color: #030013;">
+    <div class="container-fluid mt-5">
+
+      <div class="row justify-content-center mb-0 mt-5">
+        <div class="text-center">
+          <h2 class="aboutbeauty">Price List</h2>
+          <p class="dot"></p>
+          <br />
+          <p class="aboutbeautypara">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, eius quibusdam ab nobis accusantium
+            error suscipit, commodi qui alias facere vel consectetur culpa quis.Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Laudantium, eius quibusdam ab nobis accusantium
+            error suscipit, commodi qui alias facere vel.
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="offer">
+            <div class="shape">
+              <div class="offer-text">
+                
+                <h1>top</h1>
+                
+              </div>
+              <div class="allinone-text">
+                
+                <h3>All in one</h3>
+                <p>$ 6000</p>
+                
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div> -->
+
+
+      <div class="row"
+        style="margin-left: 12vw; margin-right: 12vw;margin-top: 0;margin-bottom: 5vw; column-gap: 0;row-gap: 0;">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"
+          style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;gap:0;">
+          <div class="box">
+
+            <h3 class="allinone">All in one</h3>
+
+            <p class="rupees lead">$ 60</p>
+            <!-- <div class="top">
+            <h3 >Top</h3> -->
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="box" style="border-color: rgb(127, 239, 127);">
+
+            <h3 class="allinone">Hair Styling</h3>
+
+            <p class="rupees lead">$ 100</p>
+            <!-- <div class="top">
+            <h3 >Top</h3> -->
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="box" style="border-color: rgb(132, 149, 244);">
+
+            <h3 class="allinone">Face Cleanup</h3>
+
+            <p class="rupees lead">$ 250</p>
+            <!-- <div class="top">
+            <h3 >Top</h3> -->
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="box" style="border-color: rgb(229, 116, 126);">
+
+            <h3 class="allinone">Makeup Pack</h3>
+
+            <p class="rupees lead">$ 99</p>
+            <!-- <div class="top">
+            <h3 >Top</h3> -->
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="box" style="border-color: rgb(236, 233, 105);">
+
+            <h3 class="allinone">Hands & Legs</h3>
+
+            <p class="rupees lead">$ 19</p>
+            <!-- <div class="top">
+            <h3 >Top</h3> -->
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="box" style="border-color: rgb(242, 133, 55);">
+
+            <h3 class="allinone">Face Pack</h3>
+
+            <p class="rupees lead">$ 9</p>
+            <!-- <div class="top">
+            <h3 >Top</h3> -->
+          </div>
+        </div>
+
+        <section>
+
+        </section>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Owl Carousel Products -->
+  <section class="d-flex align-items-center min-vh-75 py-5" style="background-color: #f007d5;">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center mb-0 mt-0">
+        <div class="text-center">
+
+          <h2 class="aboutbeauty">PRODUCTS</h2>
+          <br />
+          <p class="aboutbeautypara" style="color: white;margin-top:0;">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.Dolores quae porro consequatur aliquam,incidunt fugiat culpa esse aute nulla. duis fugiat
+            culpa esse autenulla ipsum velit export irure minimillum fore</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme mt-2">
+        <div class="item">
+          <img src="/images/SugarLogo.jpg" alt="Sugar logo" class="owlimg">
+        </div>
+
+        <div class="item">
+          <img src="/images/Lakmelogo.jpg" alt="Sugar logo" class="owlimg">
+        </div>
+
+        <div class="item">
+          <img src="/images/mamaearthlogo.jpg" alt="Mamaearth" class="owlimg">
+        </div>
+
+        <div class="item">
+          <img src="/images/Lotuslogo.jpg" alt="Sugar logo" class="owlimg">
+        </div>
+
+        <div class="item">
+          <img src="/images/goodvibeslogo.png" alt="Good Vibes Logo" class="owlimg">
+        </div>
+
+        <div class="item">
+          <img src="/images/Maybellinelogo.jpg" alt="Sugar logo" class="owlimg">
+        </div>
+
+        <div class="item">
+          <img src="/images/loreallogo.png" alt="Sugar logo" class="owlimg">
+        </div>
+
+        <div class="item">
+          <img src="/images/maclogo.png" alt="Mac logo" class="owlimg">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Portfolio -->
+
+  <section class="d-flex align-items-center min-vh-100 py-5" style="background-color: #030013;">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center mb-0 mt-3">
+        <div class="text-center">
+          <h2 class="aboutbeauty">Our Portfolio</h2>
+          <p class="dot" style="border-bottom: 16px dotted #e557dc;"></p>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-5 mt-3">
+        <div class="text-center">
+          <p class="aboutbeautypara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
+            consequatur aliquam, incidunt fugiat culpa esse aute nulla. malis nulla duis fugiat culpa esse aute nulla
+            ipsum velit export irure minim illum fore</p>
+
+        </div>
+      </div>
+
+      <!--images-->
+
+      <div class="row mb-5 ">
+
+        <div class="col-lg-3 col-md-6 col-xs-12 portfolioitem " style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour1.jpg" class="portfolioimg" alt="hair">
+
+          <div class="portfoliooverlay">
+
+            <h4 class="portfolioname">Portfolioname</h4>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12 portfolioitem " style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour2.jpg" class="portfolioimg" alt="hair">
+
+          <div class="portfoliooverlay">
+
+            <h4 class="portfolioname">Portfolioname</h4>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour3.jpg" class="portfolioimg" alt="hair">
+          <div class="portfoliooverlay">
+            <h4 class="portfolioname">Portfolioname</h4>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour4.jpg" class="portfolioimg" alt="hair">
+          <div class="portfoliooverlay">
+            <h4 class="portfolioname">Portfolioname</h4>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour5.jpg" class="portfolioimg" alt="hair">
+
+          <div class="portfoliooverlay">
+            <h4 class="portfolioname">Portfolioname</h4>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour6.jpg" class="portfolioimg" alt="hair">
+
+          <div class="portfoliooverlay">
+            <h4 class="portfolioname">Portfolioname</h4>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour7.jpg" class="portfolioimg" alt="hair">
+
+          <div class="portfoliooverlay">
+            <h4 class="portfolioname">Portfolioname</h4>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12" style="margin:0;padding: 0;">
+
+          <img src="/images/beauty-parlour8.jpg" class="portfolioimg" alt="hair">
+
+          <div class="portfoliooverlay">
+            <h4 class="portfolioname">Portfolioname</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="d-flex align-items-center min-vh-75 py-0" style="background-color: #030013;">
+    <div class="container-fluid mt-5">
+
+      <div class="row justify-content-center mb-0 mt-5">
+        <div class="text-center">
+          <h2 class="aboutbeauty">Testimonials</h2>
+          <p class="dot"></p>
+          <br />
+          <p class="aboutbeautypara">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, eius quibusdam ab nobis accusantium
+            error suscipit, commodi qui alias facere vel consectetur culpa quis.Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Laudantium, eius quibusdam ab nobis accusantium
+            error suscipit, commodi qui alias facere vel.
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <div class="row"
+        style="margin-left: 12vw; margin-right: 12vw;margin-top: 0;margin-bottom: 5vw; column-gap: 0;row-gap: 0;">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="mb-4 me-4">
+
+            <video width="300" height="200" controls>
+              <source src="/images/video1.mp4" type="video/mp4">
+
+            </video>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="mb-4 me-4">
+
+            <video width="300" height="200" controls>
+              <source src="/images/video2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="mb-4 me-4">
+
+            <video width="300" height="200" controls>
+              <source src="/images/video3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="mb-4 me-4">
+
+            <video width="300" height="200" controls>
+              <source src="/images/video4.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="mb-4 me-4">
+
+            <video width="300" height="200" controls>
+              <source src="/images/video5.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="margin-right: 4vw;margin-bottom: 0;margin-top: 0;">
+          <div class="mb-4 me-4">
+
+            <video width="300" height="200" controls>
+              <source src="/images/video6.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Our Service -->
+  <section class="d-flex align-items-center min-vh-75 py-5" style="background-color: #f007d5;">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center mb-0 mt-5 ms-5">
+        <div class="col-lg-9 text-lg-left">
+
+          <h2 class="aboutbeauty">Get Our Service</h2>
+          <br />
+
+          <p class="seervicespara" style="float: left;">
+
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.Dolores quae porro consequatur aliquam,incidunt fugiat culpa esse aute nulla. duis fugiat
+            culpa esse autenulla ipsum velit export irure minimillum fore.
+
+          </p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center ">
+
+          <p class="cta-btn align-middle contactus">Contact Us</p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Get news and update-->
+  <section class="d-flex align-items-center min-vh-75 py-5 beautyfooter" style="background-color: #030013;">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center align-items-center mb-0 mt-3">
+        <div class="col-md-12 mb-4">
+          <h2 style="color: white;">
+            Get News & Update
+          </h2>
+        </div>
+        <div class="col-md-12 mb-4">
+          <form action="" method="post">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <input type="text" class="form-control" placeholder="Your name here">
+              </div>
+              <div class="col-md-4 mb-4">
+                <input type="email" class="form-control" placeholder="Enter your email">
+              </div>
+              <div class="col-md-4 mb-4">
+                <input type="submit" class="btn btn-primary" placeholder="Subcribe">
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer text-white" style="background-color: #800571;">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-3 mb-5">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, soluta repellat ipsum molestiae
+            repellendus deleniti laudantium voluptatibus illum ab error temporibus sint voluptates quod, inventore rem
+            itaque officia?</p>
+          <p><a href="#" style="color: rgb(160, 245, 226);">Click Here to learn more</a></p>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <h2>Contact & Address</h2>
+          <ul class="list-unstyled footer-link">
+            <li class="d-flex">
+              <span class="me-3">Address:</span>
+              <span>
+                HPL Building,
+                Salt Lake Sector V,
+                PIN-963852,
+                West Bengal
+              </span>
+            </li>
+
+            <li class="d-flex">
+              <span class="me-3">Telephone:</span>
+              <span>
+                033-693-3654
+              </span>
+            </li>
+
+            <li class="d-flex">
+              <span class="me-3">Email:</span>
+              <span>
+                customercontact@beauty.co.in
+              </span>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <h2>Quicklinks</h2>
+          <ul class="list-unstyled footer-link">
+            <li><a href="#">About Us</a></li>
+            <li></li><a href="#">Testimonials</a>
+            <li></li><a href="#">Our Products</a>
+            <li></li><a href="#">Blog Article</a>
+            <li></li><a href="#">contct Us</a>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <h2>Our Social Media</h2>
+          <ul class="list-unstyled footer-link d-flex icons">
+            <li><a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12 text md center text-left">
+        <p>This template is made with<i class="fa fa-heart-o"></i> by Beauty.</p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

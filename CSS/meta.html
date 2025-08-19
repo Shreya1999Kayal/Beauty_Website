@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Settings</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+        padding: 40px;
+        line-height: 1.6;
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+      }
+
+      /* Label styling */
+      label {
+        display: block;
+        margin: 12px 0 6px;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      /* Value display */
+      .value-display {
+        font-size: 0.9em;
+        color: #7f8c8d;
+        margin-left: 8px;
+      }
+
+      /* Slider container */
+      .slider-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* Range input base */
+      input[type="range"] {
+        width: 200px;
+        height: 6px;
+        -webkit-appearance: none;
+        background: #e0e0e0;
+        border-radius: 3px;
+        outline: none;
+        transition: background 0.3s ease, height 0.3s ease;
+      }
+
+      /* Hover effect on track */
+      input[type="range"]:hover {
+        background: #d0d0d0;
+        height: 8px;
+      }
+
+      /* WebKit: Chrome, Safari, Edge */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 18px;
+        height: 18px;
+        background: #3498db;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      input[type="range"]::-webkit-slider-thumb:hover {
+        background: #2980b9;
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Firefox */
+      input[type="range"]::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+        background: #3498db;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      input[type="range"]::-moz-range-thumb:hover {
+        background: #2980b9;
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      input[type="range"]::-moz-range-track {
+        background: #e0e0e0;
+        height: 6px;
+        border-radius: 3px;
+      }
+
+      input[type="range"]:hover::-moz-range-track {
+        background: #d0d0d0;
+        height: 8px;
+      }
+    </style>
+  </head>
+  <body>
+   
+
+    <div class="slider-group">
+      <label for="volume">Volume</label>
+      <input
+        type="range"
+        id="volume"
+        name="volume"
+        min="0"
+        max="10"
+        value="5"
+      />
+      <span class="value-display" id="volume-value">5</span>
+    </div>
+
+    <script>
+      const volume = document.getElementById("volume");
+      const volumeValue = document.getElementById("volume-value");
+      volumeValue.textContent = volume.value;
+
+      volume.addEventListener("input", () => {
+        volumeValue.textContent = volume.value;
+      });
+    </script>
+  </body>
+</html>

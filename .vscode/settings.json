@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "PATTERN.C": "cpp",
+        "FULL NAME.C": "cpp",
+        "Fullname.C": "cpp",
+        "stdio.h": "c",
+        "string.h": "c"
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index</title>
+    <style>
+        .container{
+            position:relative;
+        }
+        #zindex{
+            border: 5px solid green;
+            background-color: aqua;
+            width:570px;
+            height:170px;
+            /* z-index: 3; */
+            margin: 50px;
+            position:relative;
+            top: 0;
+            left: 0;
+        }
+
+        #zindex1{
+            /* z-index: 2; */
+            position:absolute;
+            top: 100px;
+            left: 0;
+            width: 300px;
+            height: 170px;
+        }
+
+        #zindex2{
+            /* z-index: 1; */
+            position:absolute;
+            top: 0px;
+            left: 0;
+            width: 250px;
+            height: 270px;
+        }
+    </style>
+</head>
+<body class="container">
+    <img  src="/photos/indiaflag.png" alt="India" id="zindex">
+    <img src="/photos/bangladeshflag.png" alt="Bangladesh" id="zindex1">
+    <img src="/photos/switzerlandflag.png" alt="switzerland" id="zindex2">
+    <h1>India</h1>
+    <div ></div>
+
+</body>
+</html>
